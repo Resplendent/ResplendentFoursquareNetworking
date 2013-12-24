@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43A70301186908CC00E39CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A70300186908CC00E39CBE /* Foundation.framework */; };
+		43A70303186908CC00E39CBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A70302186908CC00E39CBE /* CoreGraphics.framework */; };
+		43A70305186908CC00E39CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A70304186908CC00E39CBE /* UIKit.framework */; };
+		43A7030B186908CC00E39CBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A70309186908CC00E39CBE /* InfoPlist.strings */; };
+		43A7030D186908CC00E39CBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7030C186908CC00E39CBE /* main.m */; };
+		43A70311186908CC00E39CBE /* RFSNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A70310186908CC00E39CBE /* RFSNAppDelegate.m */; };
+		43A70313186908CC00E39CBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A70312186908CC00E39CBE /* Images.xcassets */; };
+		43A7031A186908CC00E39CBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A70319186908CC00E39CBE /* XCTest.framework */; };
+		43A7031B186908CC00E39CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A70300186908CC00E39CBE /* Foundation.framework */; };
+		43A7031C186908CC00E39CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A70304186908CC00E39CBE /* UIKit.framework */; };
+		43A70324186908CC00E39CBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43A70322186908CC00E39CBE /* InfoPlist.strings */; };
+		43A70326186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A70325186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.m */; };
+		43A703611869092A00E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703331869092900E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.m */; };
+		43A703621869092A00E39CBE /* RFSNFourSquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703351869092900E39CBE /* RFSNFourSquareVenue.m */; };
+		43A703631869092A00E39CBE /* RFSNFourSquareVenuePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703371869092900E39CBE /* RFSNFourSquareVenuePhoto.m */; };
+		43A703641869092A00E39CBE /* RFSNFourSquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7033A1869092900E39CBE /* RFSNFourSquareRequest.m */; };
+		43A703651869092A00E39CBE /* RFSNFourSquareVenueCategoriesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7033D1869092900E39CBE /* RFSNFourSquareVenueCategoriesRequest.m */; };
+		43A703661869092A00E39CBE /* RFSNFourSquareVenuePhotosRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7033F1869092900E39CBE /* RFSNFourSquareVenuePhotosRequest.m */; };
+		43A703671869092A00E39CBE /* RFSNFourSquareVenueRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703411869092900E39CBE /* RFSNFourSquareVenueRequest.m */; };
+		43A703681869092A00E39CBE /* RFSNFourSquareVenueRequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703431869092900E39CBE /* RFSNFourSquareVenueRequestUtil.m */; };
+		43A703691869092A00E39CBE /* RFSNFourSquareVenueSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703451869092900E39CBE /* RFSNFourSquareVenueSearchRequest.m */; };
+		43A7036A1869092A00E39CBE /* RFSNFourSquareResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703481869092900E39CBE /* RFSNFourSquareResponse.m */; };
+		43A7036B1869092A00E39CBE /* RFSNFourSquareVenueCategoriesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7034A1869092900E39CBE /* RFSNFourSquareVenueCategoriesResponse.m */; };
+		43A7036C1869092A00E39CBE /* RFSNFourSquareVenuePhotosResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7034C1869092900E39CBE /* RFSNFourSquareVenuePhotosResponse.m */; };
+		43A7036D1869092A00E39CBE /* RFSNFourSquareVenueResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7034E1869092900E39CBE /* RFSNFourSquareVenueResponse.m */; };
+		43A7036E1869092A00E39CBE /* RFSNFourSquareVenueSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703501869092900E39CBE /* RFSNFourSquareVenueSearchResponse.m */; };
+		43A7036F1869092A00E39CBE /* RNJsonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703541869092900E39CBE /* RNJsonRequest.m */; };
+		43A703701869092A00E39CBE /* RNNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703561869092900E39CBE /* RNNetworkRequest.m */; };
+		43A703711869092A00E39CBE /* RNNetworkDictionaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A703591869092900E39CBE /* RNNetworkDictionaryResponse.m */; };
+		43A703721869092A00E39CBE /* RNNetworkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7035B1869092900E39CBE /* RNNetworkResponse.m */; };
+		43A7037518690B9800E39CBE /* RUClassOrNilUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A7037418690B9800E39CBE /* RUClassOrNilUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A7031D186908CC00E39CBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A702F5186908CC00E39CBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A702FC186908CC00E39CBE;
+			remoteInfo = ResplendentFoursquareNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43A702FD186908CC00E39CBE /* ResplendentFoursquareNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResplendentFoursquareNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A70300186908CC00E39CBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43A70302186908CC00E39CBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43A70304186908CC00E39CBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43A70308186908CC00E39CBE /* ResplendentFoursquareNetworking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ResplendentFoursquareNetworking-Info.plist"; sourceTree = "<group>"; };
+		43A7030A186908CC00E39CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43A7030C186908CC00E39CBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43A7030E186908CC00E39CBE /* ResplendentFoursquareNetworking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ResplendentFoursquareNetworking-Prefix.pch"; sourceTree = "<group>"; };
+		43A7030F186908CC00E39CBE /* RFSNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFSNAppDelegate.h; sourceTree = "<group>"; };
+		43A70310186908CC00E39CBE /* RFSNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFSNAppDelegate.m; sourceTree = "<group>"; };
+		43A70312186908CC00E39CBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43A70318186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResplendentFoursquareNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A70319186908CC00E39CBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43A70321186908CC00E39CBE /* ResplendentFoursquareNetworkingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ResplendentFoursquareNetworkingTests-Info.plist"; sourceTree = "<group>"; };
+		43A70323186908CC00E39CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43A70325186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResplendentFoursquareNetworkingTests.m; sourceTree = "<group>"; };
+		43A703321869092900E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RFSNFourSquareVenueCategory.h"; sourceTree = "<group>"; };
+		43A703331869092900E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RFSNFourSquareVenueCategory.m"; sourceTree = "<group>"; };
+		43A703341869092900E39CBE /* RFSNFourSquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenue.h; sourceTree = "<group>"; };
+		43A703351869092900E39CBE /* RFSNFourSquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenue.m; sourceTree = "<group>"; };
+		43A703361869092900E39CBE /* RFSNFourSquareVenuePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenuePhoto.h; sourceTree = "<group>"; };
+		43A703371869092900E39CBE /* RFSNFourSquareVenuePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenuePhoto.m; sourceTree = "<group>"; };
+		43A703391869092900E39CBE /* RFSNFourSquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareRequest.h; sourceTree = "<group>"; };
+		43A7033A1869092900E39CBE /* RFSNFourSquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareRequest.m; sourceTree = "<group>"; };
+		43A7033B1869092900E39CBE /* RFSNFourSquareResponseProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareResponseProtocols.h; sourceTree = "<group>"; };
+		43A7033C1869092900E39CBE /* RFSNFourSquareVenueCategoriesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueCategoriesRequest.h; sourceTree = "<group>"; };
+		43A7033D1869092900E39CBE /* RFSNFourSquareVenueCategoriesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueCategoriesRequest.m; sourceTree = "<group>"; };
+		43A7033E1869092900E39CBE /* RFSNFourSquareVenuePhotosRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenuePhotosRequest.h; sourceTree = "<group>"; };
+		43A7033F1869092900E39CBE /* RFSNFourSquareVenuePhotosRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenuePhotosRequest.m; sourceTree = "<group>"; };
+		43A703401869092900E39CBE /* RFSNFourSquareVenueRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueRequest.h; sourceTree = "<group>"; };
+		43A703411869092900E39CBE /* RFSNFourSquareVenueRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueRequest.m; sourceTree = "<group>"; };
+		43A703421869092900E39CBE /* RFSNFourSquareVenueRequestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueRequestUtil.h; sourceTree = "<group>"; };
+		43A703431869092900E39CBE /* RFSNFourSquareVenueRequestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueRequestUtil.m; sourceTree = "<group>"; };
+		43A703441869092900E39CBE /* RFSNFourSquareVenueSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueSearchRequest.h; sourceTree = "<group>"; };
+		43A703451869092900E39CBE /* RFSNFourSquareVenueSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueSearchRequest.m; sourceTree = "<group>"; };
+		43A703471869092900E39CBE /* RFSNFourSquareResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareResponse.h; sourceTree = "<group>"; };
+		43A703481869092900E39CBE /* RFSNFourSquareResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareResponse.m; sourceTree = "<group>"; };
+		43A703491869092900E39CBE /* RFSNFourSquareVenueCategoriesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueCategoriesResponse.h; sourceTree = "<group>"; };
+		43A7034A1869092900E39CBE /* RFSNFourSquareVenueCategoriesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueCategoriesResponse.m; sourceTree = "<group>"; };
+		43A7034B1869092900E39CBE /* RFSNFourSquareVenuePhotosResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenuePhotosResponse.h; sourceTree = "<group>"; };
+		43A7034C1869092900E39CBE /* RFSNFourSquareVenuePhotosResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenuePhotosResponse.m; sourceTree = "<group>"; };
+		43A7034D1869092900E39CBE /* RFSNFourSquareVenueResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueResponse.h; sourceTree = "<group>"; };
+		43A7034E1869092900E39CBE /* RFSNFourSquareVenueResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueResponse.m; sourceTree = "<group>"; };
+		43A7034F1869092900E39CBE /* RFSNFourSquareVenueSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFSNFourSquareVenueSearchResponse.h; sourceTree = "<group>"; };
+		43A703501869092900E39CBE /* RFSNFourSquareVenueSearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFSNFourSquareVenueSearchResponse.m; sourceTree = "<group>"; };
+		43A703531869092900E39CBE /* RNJsonRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNJsonRequest.h; sourceTree = "<group>"; };
+		43A703541869092900E39CBE /* RNJsonRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNJsonRequest.m; sourceTree = "<group>"; };
+		43A703551869092900E39CBE /* RNNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNetworkRequest.h; sourceTree = "<group>"; };
+		43A703561869092900E39CBE /* RNNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNetworkRequest.m; sourceTree = "<group>"; };
+		43A703581869092900E39CBE /* RNNetworkDictionaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNetworkDictionaryResponse.h; sourceTree = "<group>"; };
+		43A703591869092900E39CBE /* RNNetworkDictionaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNetworkDictionaryResponse.m; sourceTree = "<group>"; };
+		43A7035A1869092900E39CBE /* RNNetworkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNNetworkResponse.h; sourceTree = "<group>"; };
+		43A7035B1869092900E39CBE /* RNNetworkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNNetworkResponse.m; sourceTree = "<group>"; };
+		43A7035E1869092A00E39CBE /* RUConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUConstants.h; sourceTree = "<group>"; };
+		43A7035F1869092A00E39CBE /* RUDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUDebug.h; sourceTree = "<group>"; };
+		43A703601869092A00E39CBE /* RUDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUDLog.h; sourceTree = "<group>"; };
+		43A7037318690B9800E39CBE /* RUClassOrNilUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUClassOrNilUtil.h; sourceTree = "<group>"; };
+		43A7037418690B9800E39CBE /* RUClassOrNilUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUClassOrNilUtil.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43A702FA186908CC00E39CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A70303186908CC00E39CBE /* CoreGraphics.framework in Frameworks */,
+				43A70305186908CC00E39CBE /* UIKit.framework in Frameworks */,
+				43A70301186908CC00E39CBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A70315186908CC00E39CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A7031A186908CC00E39CBE /* XCTest.framework in Frameworks */,
+				43A7031C186908CC00E39CBE /* UIKit.framework in Frameworks */,
+				43A7031B186908CC00E39CBE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43A702F4186908CC00E39CBE = {
+			isa = PBXGroup;
+			children = (
+				43A70306186908CC00E39CBE /* ResplendentFoursquareNetworking */,
+				43A7031F186908CC00E39CBE /* ResplendentFoursquareNetworkingTests */,
+				43A702FF186908CC00E39CBE /* Frameworks */,
+				43A702FE186908CC00E39CBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43A702FE186908CC00E39CBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43A702FD186908CC00E39CBE /* ResplendentFoursquareNetworking.app */,
+				43A70318186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A702FF186908CC00E39CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A70300186908CC00E39CBE /* Foundation.framework */,
+				43A70302186908CC00E39CBE /* CoreGraphics.framework */,
+				43A70304186908CC00E39CBE /* UIKit.framework */,
+				43A70319186908CC00E39CBE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43A70306186908CC00E39CBE /* ResplendentFoursquareNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				43A7032F1869092900E39CBE /* Code */,
+				43A7030F186908CC00E39CBE /* RFSNAppDelegate.h */,
+				43A70310186908CC00E39CBE /* RFSNAppDelegate.m */,
+				43A70312186908CC00E39CBE /* Images.xcassets */,
+				43A70307186908CC00E39CBE /* Supporting Files */,
+			);
+			path = ResplendentFoursquareNetworking;
+			sourceTree = "<group>";
+		};
+		43A70307186908CC00E39CBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A70308186908CC00E39CBE /* ResplendentFoursquareNetworking-Info.plist */,
+				43A70309186908CC00E39CBE /* InfoPlist.strings */,
+				43A7030C186908CC00E39CBE /* main.m */,
+				43A7030E186908CC00E39CBE /* ResplendentFoursquareNetworking-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43A7031F186908CC00E39CBE /* ResplendentFoursquareNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				43A70325186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.m */,
+				43A70320186908CC00E39CBE /* Supporting Files */,
+			);
+			path = ResplendentFoursquareNetworkingTests;
+			sourceTree = "<group>";
+		};
+		43A70320186908CC00E39CBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A70321186908CC00E39CBE /* ResplendentFoursquareNetworkingTests-Info.plist */,
+				43A70322186908CC00E39CBE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43A7032F1869092900E39CBE /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				43A703301869092900E39CBE /* ResplendentFoursquareNetworking */,
+				43A703511869092900E39CBE /* ResplendentNetworking */,
+				43A7035C1869092A00E39CBE /* ResplendentUtilities */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		43A703301869092900E39CBE /* ResplendentFoursquareNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				43A703311869092900E39CBE /* Model */,
+				43A703381869092900E39CBE /* Request */,
+				43A703461869092900E39CBE /* Response */,
+			);
+			path = ResplendentFoursquareNetworking;
+			sourceTree = "<group>";
+		};
+		43A703311869092900E39CBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43A703321869092900E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.h */,
+				43A703331869092900E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.m */,
+				43A703341869092900E39CBE /* RFSNFourSquareVenue.h */,
+				43A703351869092900E39CBE /* RFSNFourSquareVenue.m */,
+				43A703361869092900E39CBE /* RFSNFourSquareVenuePhoto.h */,
+				43A703371869092900E39CBE /* RFSNFourSquareVenuePhoto.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43A703381869092900E39CBE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				43A703391869092900E39CBE /* RFSNFourSquareRequest.h */,
+				43A7033A1869092900E39CBE /* RFSNFourSquareRequest.m */,
+				43A7033B1869092900E39CBE /* RFSNFourSquareResponseProtocols.h */,
+				43A7033C1869092900E39CBE /* RFSNFourSquareVenueCategoriesRequest.h */,
+				43A7033D1869092900E39CBE /* RFSNFourSquareVenueCategoriesRequest.m */,
+				43A7033E1869092900E39CBE /* RFSNFourSquareVenuePhotosRequest.h */,
+				43A7033F1869092900E39CBE /* RFSNFourSquareVenuePhotosRequest.m */,
+				43A703401869092900E39CBE /* RFSNFourSquareVenueRequest.h */,
+				43A703411869092900E39CBE /* RFSNFourSquareVenueRequest.m */,
+				43A703421869092900E39CBE /* RFSNFourSquareVenueRequestUtil.h */,
+				43A703431869092900E39CBE /* RFSNFourSquareVenueRequestUtil.m */,
+				43A703441869092900E39CBE /* RFSNFourSquareVenueSearchRequest.h */,
+				43A703451869092900E39CBE /* RFSNFourSquareVenueSearchRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		43A703461869092900E39CBE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				43A703471869092900E39CBE /* RFSNFourSquareResponse.h */,
+				43A703481869092900E39CBE /* RFSNFourSquareResponse.m */,
+				43A703491869092900E39CBE /* RFSNFourSquareVenueCategoriesResponse.h */,
+				43A7034A1869092900E39CBE /* RFSNFourSquareVenueCategoriesResponse.m */,
+				43A7034B1869092900E39CBE /* RFSNFourSquareVenuePhotosResponse.h */,
+				43A7034C1869092900E39CBE /* RFSNFourSquareVenuePhotosResponse.m */,
+				43A7034D1869092900E39CBE /* RFSNFourSquareVenueResponse.h */,
+				43A7034E1869092900E39CBE /* RFSNFourSquareVenueResponse.m */,
+				43A7034F1869092900E39CBE /* RFSNFourSquareVenueSearchResponse.h */,
+				43A703501869092900E39CBE /* RFSNFourSquareVenueSearchResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		43A703511869092900E39CBE /* ResplendentNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				43A703521869092900E39CBE /* Request */,
+				43A703571869092900E39CBE /* Response */,
+			);
+			path = ResplendentNetworking;
+			sourceTree = "<group>";
+		};
+		43A703521869092900E39CBE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				43A703531869092900E39CBE /* RNJsonRequest.h */,
+				43A703541869092900E39CBE /* RNJsonRequest.m */,
+				43A703551869092900E39CBE /* RNNetworkRequest.h */,
+				43A703561869092900E39CBE /* RNNetworkRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		43A703571869092900E39CBE /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				43A703581869092900E39CBE /* RNNetworkDictionaryResponse.h */,
+				43A703591869092900E39CBE /* RNNetworkDictionaryResponse.m */,
+				43A7035A1869092900E39CBE /* RNNetworkResponse.h */,
+				43A7035B1869092900E39CBE /* RNNetworkResponse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		43A7035C1869092A00E39CBE /* ResplendentUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				43A7035D1869092A00E39CBE /* Misc */,
+			);
+			path = ResplendentUtilities;
+			sourceTree = "<group>";
+		};
+		43A7035D1869092A00E39CBE /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				43A7037318690B9800E39CBE /* RUClassOrNilUtil.h */,
+				43A7037418690B9800E39CBE /* RUClassOrNilUtil.m */,
+				43A7035E1869092A00E39CBE /* RUConstants.h */,
+				43A7035F1869092A00E39CBE /* RUDebug.h */,
+				43A703601869092A00E39CBE /* RUDLog.h */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43A702FC186908CC00E39CBE /* ResplendentFoursquareNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A70329186908CC00E39CBE /* Build configuration list for PBXNativeTarget "ResplendentFoursquareNetworking" */;
+			buildPhases = (
+				43A702F9186908CC00E39CBE /* Sources */,
+				43A702FA186908CC00E39CBE /* Frameworks */,
+				43A702FB186908CC00E39CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResplendentFoursquareNetworking;
+			productName = ResplendentFoursquareNetworking;
+			productReference = 43A702FD186908CC00E39CBE /* ResplendentFoursquareNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43A70317186908CC00E39CBE /* ResplendentFoursquareNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A7032C186908CC00E39CBE /* Build configuration list for PBXNativeTarget "ResplendentFoursquareNetworkingTests" */;
+			buildPhases = (
+				43A70314186908CC00E39CBE /* Sources */,
+				43A70315186908CC00E39CBE /* Frameworks */,
+				43A70316186908CC00E39CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A7031E186908CC00E39CBE /* PBXTargetDependency */,
+			);
+			name = ResplendentFoursquareNetworkingTests;
+			productName = ResplendentFoursquareNetworkingTests;
+			productReference = 43A70318186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43A702F5186908CC00E39CBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RFSN;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Resplendent;
+				TargetAttributes = {
+					43A70317186908CC00E39CBE = {
+						TestTargetID = 43A702FC186908CC00E39CBE;
+					};
+				};
+			};
+			buildConfigurationList = 43A702F8186908CC00E39CBE /* Build configuration list for PBXProject "ResplendentFoursquareNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 43A702F4186908CC00E39CBE;
+			productRefGroup = 43A702FE186908CC00E39CBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43A702FC186908CC00E39CBE /* ResplendentFoursquareNetworking */,
+				43A70317186908CC00E39CBE /* ResplendentFoursquareNetworkingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43A702FB186908CC00E39CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A7030B186908CC00E39CBE /* InfoPlist.strings in Resources */,
+				43A70313186908CC00E39CBE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A70316186908CC00E39CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A70324186908CC00E39CBE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43A702F9186908CC00E39CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A703661869092A00E39CBE /* RFSNFourSquareVenuePhotosRequest.m in Sources */,
+				43A7036D1869092A00E39CBE /* RFSNFourSquareVenueResponse.m in Sources */,
+				43A7037518690B9800E39CBE /* RUClassOrNilUtil.m in Sources */,
+				43A703631869092A00E39CBE /* RFSNFourSquareVenuePhoto.m in Sources */,
+				43A703641869092A00E39CBE /* RFSNFourSquareRequest.m in Sources */,
+				43A703671869092A00E39CBE /* RFSNFourSquareVenueRequest.m in Sources */,
+				43A7036F1869092A00E39CBE /* RNJsonRequest.m in Sources */,
+				43A7036A1869092A00E39CBE /* RFSNFourSquareResponse.m in Sources */,
+				43A703721869092A00E39CBE /* RNNetworkResponse.m in Sources */,
+				43A703611869092A00E39CBE /* NSDictionary+RFSNFourSquareVenueCategory.m in Sources */,
+				43A703621869092A00E39CBE /* RFSNFourSquareVenue.m in Sources */,
+				43A7036E1869092A00E39CBE /* RFSNFourSquareVenueSearchResponse.m in Sources */,
+				43A703701869092A00E39CBE /* RNNetworkRequest.m in Sources */,
+				43A703651869092A00E39CBE /* RFSNFourSquareVenueCategoriesRequest.m in Sources */,
+				43A703711869092A00E39CBE /* RNNetworkDictionaryResponse.m in Sources */,
+				43A703691869092A00E39CBE /* RFSNFourSquareVenueSearchRequest.m in Sources */,
+				43A7036B1869092A00E39CBE /* RFSNFourSquareVenueCategoriesResponse.m in Sources */,
+				43A703681869092A00E39CBE /* RFSNFourSquareVenueRequestUtil.m in Sources */,
+				43A7030D186908CC00E39CBE /* main.m in Sources */,
+				43A70311186908CC00E39CBE /* RFSNAppDelegate.m in Sources */,
+				43A7036C1869092A00E39CBE /* RFSNFourSquareVenuePhotosResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A70314186908CC00E39CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A70326186908CC00E39CBE /* ResplendentFoursquareNetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A7031E186908CC00E39CBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A702FC186908CC00E39CBE /* ResplendentFoursquareNetworking */;
+			targetProxy = 43A7031D186908CC00E39CBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43A70309186908CC00E39CBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A7030A186908CC00E39CBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43A70322186908CC00E39CBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A70323186908CC00E39CBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43A70327186908CC00E39CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43A70328186908CC00E39CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43A7032A186908CC00E39CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResplendentFoursquareNetworking/ResplendentFoursquareNetworking-Prefix.pch";
+				INFOPLIST_FILE = "ResplendentFoursquareNetworking/ResplendentFoursquareNetworking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43A7032B186908CC00E39CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResplendentFoursquareNetworking/ResplendentFoursquareNetworking-Prefix.pch";
+				INFOPLIST_FILE = "ResplendentFoursquareNetworking/ResplendentFoursquareNetworking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		43A7032D186908CC00E39CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ResplendentFoursquareNetworking.app/ResplendentFoursquareNetworking";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResplendentFoursquareNetworking/ResplendentFoursquareNetworking-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ResplendentFoursquareNetworkingTests/ResplendentFoursquareNetworkingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43A7032E186908CC00E39CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ResplendentFoursquareNetworking.app/ResplendentFoursquareNetworking";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResplendentFoursquareNetworking/ResplendentFoursquareNetworking-Prefix.pch";
+				INFOPLIST_FILE = "ResplendentFoursquareNetworkingTests/ResplendentFoursquareNetworkingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43A702F8186908CC00E39CBE /* Build configuration list for PBXProject "ResplendentFoursquareNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A70327186908CC00E39CBE /* Debug */,
+				43A70328186908CC00E39CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A70329186908CC00E39CBE /* Build configuration list for PBXNativeTarget "ResplendentFoursquareNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A7032A186908CC00E39CBE /* Debug */,
+				43A7032B186908CC00E39CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A7032C186908CC00E39CBE /* Build configuration list for PBXNativeTarget "ResplendentFoursquareNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A7032D186908CC00E39CBE /* Debug */,
+				43A7032E186908CC00E39CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43A702F5186908CC00E39CBE /* Project object */;
+}

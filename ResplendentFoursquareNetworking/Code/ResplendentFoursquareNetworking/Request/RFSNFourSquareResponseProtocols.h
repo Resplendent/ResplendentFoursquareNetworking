@@ -13,7 +13,7 @@
 
 
 @class RFSNFourSquareRequest;
-@class RUFourSquareResponse;
+@class RFSNFourSquareResponse;
 
 
 
@@ -21,6 +21,6 @@
 
 @protocol RFSNFourSquareRequestDelegate <NSObject>
 
--(void)fourSquareRequest:(RFSNFourSquareRequest*)request didFinishWithResponse:(RUFourSquareResponse*)response;
+-(void)fourSquareRequest:(RFSNFourSquareRequest*)request didFinishWithResponse:(RFSNFourSquareResponse*)response;
 
 @end

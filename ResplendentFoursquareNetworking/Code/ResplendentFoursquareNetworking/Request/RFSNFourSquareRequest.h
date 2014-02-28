@@ -7,7 +7,7 @@
 //
 
 #import "RNJsonRequest.h"
-#import "RFSNFourSquareResponseProtocols.h"
+#import "RFSNFourSquareRequestProtocols.h"
 
 
 

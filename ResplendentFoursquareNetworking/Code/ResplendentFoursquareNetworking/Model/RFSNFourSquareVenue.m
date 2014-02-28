@@ -102,7 +102,7 @@
     return [_infoDict objectForKey:@"name"];
 }
 
-+(NSString*)categoryIconUrlFromCategoryInfoDict:(NSDictionary*)categoryInfoDict widthClosestTo:(NSInteger)width doubleForRetina:(BOOL)doubleForRetina
++(NSString*)categoryIconUrlFromCategoryInfoDict:(NSDictionary*)categoryInfoDict widthClosestTo:(NSInteger)width
 {
     NSDictionary* urlDict = [categoryInfoDict objectForKey:@"icon"];
     
@@ -138,7 +138,7 @@
     return [NSString stringWithFormat:@"%@%@%@",prefix,targetedDimension,suffix];
 }
 
--(NSString*)categoryIconUrlWithWidthClosestTo:(NSInteger)width doubleForRetina:(BOOL)doubleForRetina
+-(NSString*)categoryIconUrlWithWidthClosestTo:(NSInteger)width
 {
     return [RFSNFourSquareVenue categoryIconUrlFromCategoryInfoDict:self.categoryInfo widthClosestTo:width doubleForRetina:doubleForRetina];
 }

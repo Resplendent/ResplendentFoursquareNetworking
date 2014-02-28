@@ -20,32 +20,32 @@ NSString* const kRFSNFourSquareVenueCategoryNSDictionaryCategoriesKey = @"catego
 
 @implementation NSDictionary (RFSNFourSquareVenueCategory)
 
--(NSString *)ruFourSquareVenueCategoryName
+-(NSString *)rfsnFourSquareVenueCategoryName
 {
     return [self objectForKey:@"name"];
 }
 
--(NSString *)ruFourSquareVenueCategoryUid
+-(NSString *)rfsnFourSquareVenueCategoryUid
 {
     return [self objectForKey:@"id"];
 }
 
--(NSString *)ruFourSquareVenueCategoryPluralName
+-(NSString *)rfsnFourSquareVenueCategoryPluralName
 {
     return [self objectForKey:@"pluralName"];
 }
 
--(NSString *)ruFourSquareVenueCategoryShortName
+-(NSString *)rfsnFourSquareVenueCategoryShortName
 {
     return [self objectForKey:@"shortName"];
 }
 
--(NSArray *)ruFourSquareVenueCategoryCategories
+-(NSArray *)rfsnFourSquareVenueCategoryCategories
 {
     return [self objectForKey:kRFSNFourSquareVenueCategoryNSDictionaryCategoriesKey];
 }
 
--(NSDictionary *)ruFourSquareVenueCategoryIcon
+-(NSDictionary *)rfsnFourSquareVenueCategoryIcon
 {
     return [self objectForKey:@"icon"];
 }

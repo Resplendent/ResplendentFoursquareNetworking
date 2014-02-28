@@ -56,18 +56,18 @@
 
 @end
 
-@interface NSDictionary (RUFourSquareVenueCategoryInfo)
+@interface NSDictionary (RFSNFourSquareVenueCategoryInfo)
 
-@property (nonatomic, readonly) NSString* RUFourSquareVenueCategoryInfoPluralName;
+@property (nonatomic, readonly) NSString* RFSNFourSquareVenueCategoryInfoPluralName;
 
 @end
 
-@interface NSDictionary (RUFourSquareVenueLocationInfo)
+@interface NSDictionary (RFSNFourSquareVenueLocationInfo)
 
-@property (nonatomic, readonly) NSString* RUFourSquareVenueLocationInfoCity;
-@property (nonatomic, readonly) NSString* RUFourSquareVenueLocationInfoState;
-@property (nonatomic, readonly) NSString* RUFourSquareVenueLocationInfoCountry;
-@property (nonatomic, readonly) NSString* RUFourSquareVenueLocationInfoAddress;
-@property (nonatomic, readonly) id RUFourSquareVenueLocationInfoPostalCode;
+@property (nonatomic, readonly) NSString* RFSNFourSquareVenueLocationInfoCity;
+@property (nonatomic, readonly) NSString* RFSNFourSquareVenueLocationInfoState;
+@property (nonatomic, readonly) NSString* RFSNFourSquareVenueLocationInfoCountry;
+@property (nonatomic, readonly) NSString* RFSNFourSquareVenueLocationInfoAddress;
+@property (nonatomic, readonly) id RFSNFourSquareVenueLocationInfoPostalCode;
 
 @end

@@ -101,7 +101,7 @@ NSInteger PAFourSquareVenuePhotoDistanceOfClosestDimension(CGSize size1,CGSize s
 //    {
 //        NSDictionary* photoItemJsonDict = [photoItemsJsonArray objectAtIndex:index];
 //
-//        RUFourSquareVenuePhoto* fsPhoto = [RUFourSquareVenuePhoto fourSquareVenuePhotoForJsonDict:photoItemJsonDict];
+//        RFSNFourSquareVenuePhoto* fsPhoto = [RFSNFourSquareVenuePhoto fourSquareVenuePhotoForJsonDict:photoItemJsonDict];
 //        if (fsPhoto)
 //            [fourSquareVenuePhotos addObject:fsPhoto];
 //    }

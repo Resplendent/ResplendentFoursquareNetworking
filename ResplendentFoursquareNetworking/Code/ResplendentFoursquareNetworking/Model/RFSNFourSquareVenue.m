@@ -39,9 +39,7 @@
     {
         if (!self.category)
         {
-#if kPAFourSquareVenueWhineOnNilCategory
-            RUDLog(@"four square venue with dict %@ has no category. this is a test for category effectiveness",dict);
-#endif
+            RUDLog(@"four square venue with dict %@ has no category. this is a test for category effectiveness",_infoDict);
             return nil;
         }
     }
@@ -66,7 +64,7 @@
 
 -(NSString *)category
 {
-    return self.categoryInfo.RUFourSquareVenueCategoryInfoPluralName;
+    return self.categoryInfo.RFSNFourSquareVenueCategoryInfoPluralName;
 }
 
 -(NSDictionary *)categoryInfo
@@ -187,9 +185,9 @@
 
 +(NSString*)cityStateCountryAddressChunkWithAddressDict:(NSDictionary*)addressDict
 {
-    NSString* city = kRUStringOrNil(addressDict.RUFourSquareVenueLocationInfoCity);
-    NSString* state = kRUStringOrNil(addressDict.RUFourSquareVenueLocationInfoState);
-    NSString* country = kRUStringOrNil(addressDict.RUFourSquareVenueLocationInfoCountry);
+    NSString* city = kRUStringOrNil(addressDict.RFSNFourSquareVenueLocationInfoCity);
+    NSString* state = kRUStringOrNil(addressDict.RFSNFourSquareVenueLocationInfoState);
+    NSString* country = kRUStringOrNil(addressDict.RFSNFourSquareVenueLocationInfoCountry);
     
     if (!city.length && !state.length && !country.length)
     {
@@ -227,13 +225,13 @@
 
     NSMutableString* fullAddress = [NSMutableString stringWithString:initialCityStateCountryAddressChunk];
 
-    NSString* address = kRUStringOrNil(addressDict.RUFourSquareVenueLocationInfoAddress);
+    NSString* address = kRUStringOrNil(addressDict.RFSNFourSquareVenueLocationInfoAddress);
     if (address.length)
     {
         [fullAddress insertString:RUStringWithFormat(@"%@ ",address) atIndex:0];
     }
 
-    id postalCode = addressDict.RUFourSquareVenueLocationInfoPostalCode;
+    id postalCode = addressDict.RFSNFourSquareVenueLocationInfoPostalCode;
     if (postalCode)
     {
         [fullAddress appendFormat:@" %@",postalCode];
@@ -244,38 +242,46 @@
 
 @end
 
-@implementation NSDictionary (RUFourSquareVenueCategoryInfo)
 
--(NSString *)RUFourSquareVenueCategoryInfoPluralName
+
+
+
+@implementation NSDictionary (RFSNFourSquareVenueCategoryInfo)
+
+-(NSString *)RFSNFourSquareVenueCategoryInfoPluralName
 {
     return [self objectForKey:@"pluralName"];
 }
 
 @end
 
-@implementation NSDictionary (RUFourSquareVenueLocationInfo)
 
--(NSString *)RUFourSquareVenueLocationInfoCity
+
+
+
+@implementation NSDictionary (RFSNFourSquareVenueLocationInfo)
+
+-(NSString *)RFSNFourSquareVenueLocationInfoCity
 {
     return [self objectForKey:@"city"];
 }
 
--(NSString *)RUFourSquareVenueLocationInfoState
+-(NSString *)RFSNFourSquareVenueLocationInfoState
 {
     return [self objectForKey:@"state"];
 }
 
--(NSString *)RUFourSquareVenueLocationInfoCountry
+-(NSString *)RFSNFourSquareVenueLocationInfoCountry
 {
     return [self objectForKey:@"country"];
 }
 
--(NSString *)RUFourSquareVenueLocationInfoAddress
+-(NSString *)RFSNFourSquareVenueLocationInfoAddress
 {
     return [self objectForKey:@"address"];
 }
 
--(id)RUFourSquareVenueLocationInfoPostalCode
+-(id)RFSNFourSquareVenueLocationInfoPostalCode
 {
     return [self objectForKey:@"postalCode"];
 }

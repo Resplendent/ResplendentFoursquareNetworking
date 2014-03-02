@@ -114,14 +114,6 @@
         targetedDimension = ([imageSizeArray containsObject:targetedDimension] ? targetedDimension : [imageSizeArray lastObject]);
     }
     
-    if (targetedDimension)
-    {
-        if (doubleForRetina && [[UIScreen mainScreen] respondsToSelector:@selector(scale)])
-        {
-            targetedDimension = @(targetedDimension.integerValue * [UIScreen mainScreen].scale);
-        }
-    }
-    
     NSString* prefix = [urlDict objectForKey:@"prefix"];
     NSString* suffix = [urlDict objectForKey:@"suffix"];
     
@@ -140,7 +132,7 @@
 
 -(NSString*)categoryIconUrlWithWidthClosestTo:(NSInteger)width
 {
-    return [RFSNFourSquareVenue categoryIconUrlFromCategoryInfoDict:self.categoryInfo widthClosestTo:width doubleForRetina:doubleForRetina];
+    return [RFSNFourSquareVenue categoryIconUrlFromCategoryInfoDict:self.categoryInfo widthClosestTo:width];
 }
 
 -(NSString*)fullAddress

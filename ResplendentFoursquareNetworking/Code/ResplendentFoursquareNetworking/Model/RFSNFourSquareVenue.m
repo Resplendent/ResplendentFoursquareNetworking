@@ -107,13 +107,28 @@
     NSDictionary* urlDict = [categoryInfoDict objectForKey:@"icon"];
     
     NSNumber* targetedDimension = @(width);
-    
-    NSArray* imageSizeArray = [urlDict objectForKey:@"sizes"];
-    if (imageSizeArray)
-    {
-        targetedDimension = ([imageSizeArray containsObject:targetedDimension] ? targetedDimension : [imageSizeArray lastObject]);
-    }
-    
+
+    static NSArray* availableImageWidths;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		//From https://developer.foursquare.com/docs/responses/category
+		availableImageWidths = @[@(32),@(44),@(64),@(88)];
+	});
+//    NSArray* imageSizeArray = [urlDict objectForKey:@"sizes"];
+
+	NSNumber* closestDimension = nil;
+
+	//Finds value closest to and >= targetedDimension
+	for (NSNumber* availableImageWidth in availableImageWidths)
+	{
+		if ((!closestDimension) ||
+			((closestDimension.integerValue < targetedDimension.integerValue) && (availableImageWidth.integerValue > closestDimension.integerValue)) ||
+			(abs(targetedDimension.integerValue - availableImageWidth.integerValue) < abs(targetedDimension.integerValue - closestDimension.integerValue)))
+		{
+			closestDimension = availableImageWidth;
+		}
+	}
+
     NSString* prefix = [urlDict objectForKey:@"prefix"];
     NSString* suffix = [urlDict objectForKey:@"suffix"];
     
@@ -127,7 +142,7 @@
         suffix = [urlDict objectForKey:@"name"];
     }
     
-    return [NSString stringWithFormat:@"%@%@%@",prefix,targetedDimension,suffix];
+    return [NSString stringWithFormat:@"%@%@%@",prefix,closestDimension,suffix];
 }
 
 -(NSString*)categoryIconUrlWithWidthClosestTo:(NSInteger)width
